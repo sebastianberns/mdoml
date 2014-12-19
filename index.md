@@ -87,7 +87,20 @@ The custom `<formgroup>` element automatically aligns immediate `<label>`s and t
 
 Uses custom `<row>`s and `<column>`s to create a basic grid layout. Columns are then sized with a `cols` attribute.
 
-*Note that not all possible column combinations are used here. I've purposely avoided adding 1, 5, 7, and 11 as they seem rather uncommon.*
+<row>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+  <column cols="1">1</column>
+</row>
 
 <row>
   <column cols="2">2</column>
@@ -109,11 +122,22 @@ Uses custom `<row>`s and `<column>`s to create a basic grid layout. Columns are 
   <column cols="4">4</column>
   <column cols="4">4</column>
   <column cols="4">4</column>
+</row>
+
+<row>
+  <column cols="5">5</column>
+  <column cols="5">5</column>
+  <column cols="2">2</column>
 </row>
 
 <row>
   <column cols="6">6</column>
   <column cols="6">6</column>
+</row>
+
+<row>
+  <column cols="7">7</column>
+  <column cols="5">5</column>
 </row>
 
 <row>
@@ -129,6 +153,11 @@ Uses custom `<row>`s and `<column>`s to create a basic grid layout. Columns are 
 <row>
   <column cols="10">10</column>
   <column cols="2">2</column>
+</row>
+
+<row>
+  <column cols="11">11</column>
+  <column cols="1">1</column>
 </row>
 
 {% highlight html %}
