@@ -85,86 +85,57 @@ The custom `<formgroup>` element automatically aligns immediate `<label>`s and t
 
 ## Grids
 
-Uses custom `<row>`s and `<column>`s to create a basic grid layout. Columns are then sized with a `cols` attribute.
+Uses custom `<row>`s and `<column>`s to create a basic grid layout. Define basic column widths with the `cols-xs` attribute.
 
 <row>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
-  <column cols="1">1</column>
+  <column cols-xs="6">6</column>
+  <column cols-xs="6">6</column>
 </row>
 
 <row>
-  <column cols="2">2</column>
-  <column cols="2">2</column>
-  <column cols="2">2</column>
-  <column cols="2">2</column>
-  <column cols="2">2</column>
-  <column cols="2">2</column>
+  <column cols-xs="4">4</column>
+  <column cols-xs="4">4</column>
+  <column cols-xs="4">4</column>
 </row>
 
 <row>
-  <column cols="3">3</column>
-  <column cols="3">3</column>
-  <column cols="3">3</column>
-  <column cols="3">3</column>
-</row>
-
-<row>
-  <column cols="4">4</column>
-  <column cols="4">4</column>
-  <column cols="4">4</column>
-</row>
-
-<row>
-  <column cols="5">5</column>
-  <column cols="5">5</column>
-  <column cols="2">2</column>
-</row>
-
-<row>
-  <column cols="6">6</column>
-  <column cols="6">6</column>
-</row>
-
-<row>
-  <column cols="7">7</column>
-  <column cols="5">5</column>
-</row>
-
-<row>
-  <column cols="8">8</column>
-  <column cols="4">4</column>
-</row>
-
-<row>
-  <column cols="9">9</column>
-  <column cols="3">3</column>
-</row>
-
-<row>
-  <column cols="10">10</column>
-  <column cols="2">2</column>
-</row>
-
-<row>
-  <column cols="11">11</column>
-  <column cols="1">1</column>
+  <column cols-xs="3">3</column>
+  <column cols-xs="3">3</column>
+  <column cols-xs="3">3</column>
+  <column cols-xs="3">3</column>
 </row>
 
 {% highlight html %}
 <row>
-  <column cols="4">4</column>
-  <column cols="4">4</column>
-  <column cols="4">4</column>
+  <column cols-xs="6">6</column>
+  <column cols-xs="6">6</column>
+</row>
+{% endhighlight %}
+
+Columns can be adapted to different screen sizes with additional attributes `cols-sm`, `cols-md` and `cols-lg`.
+
+<row>
+  <column cols-xs="12" cols-sm="6">xs:12 sm:6</column>
+  <column cols-xs="12" cols-sm="6">xs:12 sm:6</column>
+</row>
+
+<row>
+  <column cols-xs="6" cols-md="4">xs:6 md:4</column>
+  <column cols-xs="6" cols-md="4">xs:6 md:4</column>
+  <column cols-xs="12" cols-md="4">xs:12 md:4</column>
+</row>
+
+<row>
+  <column cols-xs="12" cols-sm="6" cols-md="3">xs:12 sm:6 md:3</column>
+  <column cols-xs="12" cols-sm="6" cols-md="3">xs:12 sm:6 md:3</column>
+  <column cols-xs="12" cols-sm="6" cols-md="3">xs:12 sm:6 md:3</column>
+  <column cols-xs="12" cols-sm="6" cols-md="3">xs:12 sm:6 md:3</column>
+</row>
+
+{% highlight html %}
+<row>
+  <column cols-xs="12" cols-sm="6">xs:12 sm:6</column>
+  <column cols-xs="12" cols-sm="6">xs:12 sm:6</column>
 </row>
 {% endhighlight %}
 

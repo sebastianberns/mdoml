@@ -86,6 +86,10 @@ formgroup {
 // Grid
 //
 
+$screen-sm-min:  768px;
+$screen-md-min:  992px;
+$screen-lg-min: 1200px;
+
 $grid-columns: 12;
 $grid-gutter: 1rem;
 
@@ -105,16 +109,33 @@ row {
 }
 
 // Columns
+
+@mixin make-columns($size: xs) {
+  @for $i from 1 through $grid-columns {
+    column[cols-#{$size}="#{$i}"] { width:  $i/$grid-columns * 100%; }
+  }
+}
+
 column {
   position: relative;
   float: left;
   padding: .5rem #{$grid-gutter};
   background-color: rgba(255,0,0,.15);
   border: .0625rem solid rgba(255,0,0,.15);
-  
-  @for $i from 1 through $grid-columns {
-    &[cols="#{$i}"] { width:  $i/$grid-columns * 100%; }
-  }
+}
+
+@include make-columns();
+
+@media (min-width: $screen-sm-min) {
+  @include make-columns(sm);
+}
+
+@media (min-width: $screen-md-min) {
+  @include make-columns(md);
+}
+
+@media (min-width: $screen-lg-min) {
+  @include make-columns(lg);
 }
 
 
