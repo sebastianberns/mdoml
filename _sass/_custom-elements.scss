@@ -96,16 +96,7 @@ $grid-gutter: 1rem;
 row {
   display: block;
   margin: #{$grid-gutter} -#{$grid-gutter};
-
-  // Clearfix
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+  font-size: 0;
 }
 
 // Columns
@@ -118,7 +109,8 @@ row {
 
 column {
   position: relative;
-  float: left;
+  display: inline-block;
+  font-size: 1rem;
   padding: .5rem #{$grid-gutter};
   background-color: rgba(255,0,0,.15);
   border: .0625rem solid rgba(255,0,0,.15);
