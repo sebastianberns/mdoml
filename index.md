@@ -115,27 +115,27 @@ Uses custom `<row>`s and `<column>`s to create a basic grid layout. Define basic
 Columns can be adapted to different screen sizes with additional attributes `cols-sm`, `cols-md` and `cols-lg`.
 
 <row>
-  <column cols-xs="12" cols-sm="6">xs:12 sm:6</column>
-  <column cols-xs="12" cols-sm="6">xs:12 sm:6</column>
+  <column cols-xs="12" cols-sm="6">xs: 12<br>sm: 6</column>
+  <column cols-xs="12" cols-sm="6">xs: 12<br>sm: 6</column>
 </row>
 
 <row>
-  <column cols-xs="6" cols-md="4">xs:6 md:4</column>
-  <column cols-xs="6" cols-md="4">xs:6 md:4</column>
-  <column cols-xs="12" cols-md="4">xs:12 md:4</column>
+  <column cols-xs="6" cols-md="4">xs: 6<br>md: 4</column>
+  <column cols-xs="6" cols-md="4">xs: 6<br>md: 4</column>
+  <column cols-xs="12" cols-md="4">xs: 12<br>md: 4</column>
 </row>
 
 <row>
-  <column cols-xs="12" cols-sm="6" cols-md="3">xs:12 sm:6 md:3</column>
-  <column cols-xs="12" cols-sm="6" cols-md="3">xs:12 sm:6 md:3</column>
-  <column cols-xs="12" cols-sm="6" cols-md="3">xs:12 sm:6 md:3</column>
-  <column cols-xs="12" cols-sm="6" cols-md="3">xs:12 sm:6 md:3</column>
+  <column cols-xs="12" cols-sm="6" cols-md="3">xs: 12<br>sm: 6<br>md: 3</column>
+  <column cols-xs="12" cols-sm="6" cols-md="3">xs: 12<br>sm: 6<br>md: 3</column>
+  <column cols-xs="12" cols-sm="6" cols-md="3">xs: 12<br>sm: 6<br>md: 3</column>
+  <column cols-xs="12" cols-sm="6" cols-md="3">xs: 12<br>sm: 6<br>md: 3</column>
 </row>
 
 {% highlight html %}
 <row>
-  <column cols-xs="12" cols-sm="6">xs:12 sm:6</column>
-  <column cols-xs="12" cols-sm="6">xs:12 sm:6</column>
+  <column cols-xs="12" cols-sm="6">xs: 12<br>sm: 6</column>
+  <column cols-xs="12" cols-sm="6">xs: 12<br>sm: 6</column>
 </row>
 {% endhighlight %}
 
