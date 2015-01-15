@@ -102,9 +102,15 @@ row {
 // Columns
 
 @mixin make-columns($size: xs) {
+
   @for $i from 1 through $grid-columns {
     column[cols-#{$size}="#{$i}"] { width:  $i/$grid-columns * 100%; }
   }
+  
+  @for $i from 1 through ($grid-columns - 1) {
+    column[cols-#{$size}-offset="#{$i}"] { margin-left:  $i/$grid-columns * 100%; }
+  }
+  
 }
 
 column {
